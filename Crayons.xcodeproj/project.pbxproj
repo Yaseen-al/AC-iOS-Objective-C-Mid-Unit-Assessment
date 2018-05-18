@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F712EFD20AF488300052599 /* ContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F712EFC20AF488300052599 /* ContentView.m */; };
 		571A1AB720AB5DC900624059 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 571A1AB620AB5DC900624059 /* AppDelegate.m */; };
 		571A1ABD20AB5DC900624059 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 571A1ABB20AB5DC900624059 /* Main.storyboard */; };
 		571A1ABF20AB5DCA00624059 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 571A1ABE20AB5DCA00624059 /* Assets.xcassets */; };
@@ -14,7 +15,7 @@
 		571A1AC520AB5DCA00624059 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 571A1AC420AB5DCA00624059 /* main.m */; };
 		571A1ACF20AB5DCA00624059 /* CrayonsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 571A1ACE20AB5DCA00624059 /* CrayonsTests.m */; };
 		571A1ADB20AB74DA00624059 /* Crayon.m in Sources */ = {isa = PBXBuildFile; fileRef = 571A1ADA20AB74DA00624059 /* Crayon.m */; };
-		57D486A820ADE9560052E870 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57D486A720ADE9560052E870 /* ViewController.m */; };
+		57D486A820ADE9560052E870 /* CrayonsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57D486A720ADE9560052E870 /* CrayonsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F712EFB20AF488300052599 /* ContentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContentView.h; sourceTree = "<group>"; };
+		1F712EFC20AF488300052599 /* ContentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContentView.m; sourceTree = "<group>"; };
 		571A1AB220AB5DC900624059 /* Crayons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Crayons.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		571A1AB520AB5DC900624059 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		571A1AB620AB5DC900624059 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -41,8 +44,8 @@
 		571A1AD020AB5DCA00624059 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		571A1AD920AB749E00624059 /* Crayon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Crayon.h; sourceTree = "<group>"; };
 		571A1ADA20AB74DA00624059 /* Crayon.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Crayon.m; sourceTree = "<group>"; };
-		57D486A620ADE9560052E870 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		57D486A720ADE9560052E870 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		57D486A620ADE9560052E870 /* CrayonsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CrayonsViewController.h; sourceTree = "<group>"; };
+		57D486A720ADE9560052E870 /* CrayonsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrayonsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F712EFA20AF487400052599 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1F712EFB20AF488300052599 /* ContentView.h */,
+				1F712EFC20AF488300052599 /* ContentView.m */,
+				1F712EFE20AF489E00052599 /* Custom Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1F712EFE20AF489E00052599 /* Custom Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Custom Cells";
+			sourceTree = "<group>";
+		};
 		571A1AA920AB5DC900624059 = {
 			isa = PBXGroup;
 			children = (
@@ -84,8 +104,8 @@
 		571A1AB420AB5DC900624059 /* Crayons */ = {
 			isa = PBXGroup;
 			children = (
+				1F712EFA20AF487400052599 /* Views */,
 				57D486A920ADEB8A0052E870 /* Models */,
-				57D486AC20ADEBCB0052E870 /* Views */,
 				57D486AA20ADEB990052E870 /* Controllers */,
 				57D486AB20ADEBAE0052E870 /* Supporting Files */,
 				571A1AC320AB5DCA00624059 /* Info.plist */,
@@ -114,8 +134,8 @@
 		57D486AA20ADEB990052E870 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				57D486A620ADE9560052E870 /* ViewController.h */,
-				57D486A720ADE9560052E870 /* ViewController.m */,
+				57D486A620ADE9560052E870 /* CrayonsViewController.h */,
+				57D486A720ADE9560052E870 /* CrayonsViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -131,13 +151,6 @@
 				571A1AC420AB5DCA00624059 /* main.m */,
 			);
 			path = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		57D486AC20ADEBCB0052E870 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,7 +255,8 @@
 			files = (
 				571A1AC520AB5DCA00624059 /* main.m in Sources */,
 				571A1AB720AB5DC900624059 /* AppDelegate.m in Sources */,
-				57D486A820ADE9560052E870 /* ViewController.m in Sources */,
+				1F712EFD20AF488300052599 /* ContentView.m in Sources */,
+				57D486A820ADE9560052E870 /* CrayonsViewController.m in Sources */,
 				571A1ADB20AB74DA00624059 /* Crayon.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
