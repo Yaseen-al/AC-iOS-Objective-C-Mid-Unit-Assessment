@@ -69,9 +69,14 @@
 
 - (nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
     Crayon *currentCrayon = [self crayons][indexPath.row];
-    UITableViewCell *myDefaultCell = [[UITableViewCell alloc] init];
+    UITableViewCell *myDefaultCell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"DefaultCell"];
     myDefaultCell.textLabel.text = currentCrayon.name;
-    
+    myDefaultCell.detailTextLabel.text  = currentCrayon.hex;
+    myDefaultCell.backgroundColor = [UIColor colorWithRed:(currentCrayon.red/255) green:(currentCrayon.green/255) blue:(currentCrayon.blue/255) alpha: 1.0];
+    if ([currentCrayon.hex isEqualToString:@"#000000"]){
+        myDefaultCell.textLabel.textColor = UIColor.whiteColor;
+        myDefaultCell.detailTextLabel.textColor = UIColor.whiteColor;
+    }
     return myDefaultCell;
 }
 
