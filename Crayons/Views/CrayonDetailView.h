@@ -1,0 +1,26 @@
+//
+//  CrayonDetailView.h
+//  Crayons
+//
+//  Created by Yaseen Al Dallash on 5/18/18.
+//  Copyright © 2018 Alex Paul. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+#import "Crayon.h"
+@interface CrayonDetailView : UIView
+
+@property (strong, nonatomic) UILabel *crayonNameLabel;
+@property (strong, nonatomic) UILabel *crayonRedValueLabel;
+@property (strong, nonatomic) UILabel *crayonGreenValueLabel;
+@property (strong, nonatomic) UILabel *crayonBlueValueLabel;
+@property (strong, nonatomic) UILabel *crayonAlphaValueLabel;
+
+@property (strong, nonatomic) UISlider *crayonRedSlider;
+@property (strong, nonatomic) UISlider *crayonGreenSlider;
+@property (strong, nonatomic) UIStepper *crayonBlueSlider;
+@property (strong, nonatomic) UIStepper *crayonAlphaSlider;
+
+
+-(void)configureCrayonDetailView: (Crayon *) crayon;
+@end

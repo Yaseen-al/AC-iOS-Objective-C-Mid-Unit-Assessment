@@ -9,6 +9,7 @@
 #import "CrayonsViewController.h"
 #import "Crayon.h"
 #import "ContentView.h"
+#import "DetailCrayonViewController.h"
 @interface CrayonsViewController ()
 
 @end
@@ -58,6 +59,7 @@
 
 
                                               ]];
+    
 }
 
 #pragma configure Navigation Bar
@@ -85,5 +87,13 @@
 }
 
 #pragma mark - TableView Delegates
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    Crayon *selectedCrayon = [self crayons][indexPath.row];
+    DetailCrayonViewController *detailedCrayon = [[DetailCrayonViewController alloc] initWithCrayon:selectedCrayon];
+    [self.navigationController pushViewController:detailedCrayon animated:true];
+    
+    
+}
 
 @end
