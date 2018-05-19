@@ -18,8 +18,8 @@
 
 @property (strong, nonatomic) UISlider *crayonRedSlider;
 @property (strong, nonatomic) UISlider *crayonGreenSlider;
-@property (strong, nonatomic) UIStepper *crayonBlueSlider;
-@property (strong, nonatomic) UIStepper *crayonAlphaSlider;
+@property (strong, nonatomic) UIStepper *crayonBlueStepper;
+@property (strong, nonatomic) UIStepper *crayonAlphaStepper;
 
 
 -(void)configureCrayonDetailView: (Crayon *) crayon;
