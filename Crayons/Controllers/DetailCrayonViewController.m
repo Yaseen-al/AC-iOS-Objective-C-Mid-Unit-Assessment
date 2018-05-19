@@ -20,6 +20,7 @@
     [self configureNavBar];
     [self allocInitSubViews];
     [self configureDetailCrayonView];
+    [self configureSliders];
 }
 
 
@@ -57,7 +58,33 @@
 -(void) configureNavBar{
     self.navigationItem.title = @"Preferences";
 }
+#pragma configure Sliders
 
+-(void) configureSliders{
+    [self.crayonDetailView.crayonRedSlider addTarget:self action:@selector(redSliderValueChanged:) forControlEvents:UIControlEventValueChanged];
+    [self.crayonDetailView.crayonGreenSlider addTarget:self action:@selector(greenSliderValueChanged:)  forControlEvents:UIControlEventValueChanged];
+    [self.crayonDetailView.crayonBlueStepper addTarget:self action:@selector(blueStepperValueChanged:) forControlEvents:UIControlEventValueChanged];
+}
+
+-(void) redSliderValueChanged: (UISlider *) sender{
+    double sliderValue = sender.value;
+    self.crayon.red = sliderValue;
+    self.crayonDetailView.crayonRedValueLabel.text = [NSString stringWithFormat:@"Red: %f", _crayon.red];
+    self.crayonDetailView.backgroundColor = [UIColor colorWithRed:(_crayon.red/255) green:(_crayon.green/255) blue:(_crayon.blue/255) alpha: 1.0];
+}
+
+-(void) greenSliderValueChanged: (UISlider *) sender{
+    double sliderValue = sender.value;
+    self.crayon.green = sliderValue;
+    self.crayonDetailView.crayonGreenValueLabel.text = [NSString stringWithFormat:@"Green: %f", _crayon.green];
+    self.crayonDetailView.backgroundColor = [UIColor colorWithRed:(_crayon.red/255) green:(_crayon.green/255) blue:(_crayon.blue/255) alpha: 1.0];
+}
+-(void) blueStepperValueChanged: (UIStepper *) sender{
+    double stepperValue = sender.value;
+    self.crayon.blue = stepperValue;
+    self.crayonDetailView.crayonBlueValueLabel.text = [NSString stringWithFormat:@"Blue: %f", _crayon.blue];
+    self.crayonDetailView.backgroundColor = [UIColor colorWithRed:(_crayon.red/255) green:(_crayon.green/255) blue:(_crayon.blue/255) alpha: 1.0];
+}
 
 
 
