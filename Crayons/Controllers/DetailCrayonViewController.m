@@ -8,6 +8,7 @@
 
 #import "DetailCrayonViewController.h"
 #import "CrayonDetailView.h"
+#import "UIColor+Hex.h"
 @interface DetailCrayonViewController ()
 
 @end
@@ -21,6 +22,7 @@
     [self allocInitSubViews];
     [self configureDetailCrayonView];
     [self configureSliders];
+    UIColor *myColorFromHex = [[UIColor alloc] initWiThHex:@"#FF1113"];
 }
 
 

@@ -10,6 +10,7 @@
 		1F712EFD20AF488300052599 /* ContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F712EFC20AF488300052599 /* ContentView.m */; };
 		1F712F0120AF590300052599 /* CrayonDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F712F0020AF590300052599 /* CrayonDetailView.m */; };
 		1F712F0420AF593000052599 /* DetailCrayonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F712F0320AF593000052599 /* DetailCrayonViewController.m */; };
+		1F712F0820B0C6FC00052599 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F712F0720B0C6FC00052599 /* UIColor+Hex.m */; };
 		571A1AB720AB5DC900624059 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 571A1AB620AB5DC900624059 /* AppDelegate.m */; };
 		571A1ABD20AB5DC900624059 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 571A1ABB20AB5DC900624059 /* Main.storyboard */; };
 		571A1ABF20AB5DCA00624059 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 571A1ABE20AB5DCA00624059 /* Assets.xcassets */; };
@@ -37,6 +38,8 @@
 		1F712F0020AF590300052599 /* CrayonDetailView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrayonDetailView.m; sourceTree = "<group>"; };
 		1F712F0220AF593000052599 /* DetailCrayonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailCrayonViewController.h; sourceTree = "<group>"; };
 		1F712F0320AF593000052599 /* DetailCrayonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailCrayonViewController.m; sourceTree = "<group>"; };
+		1F712F0620B0C6FC00052599 /* UIColor+Hex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
+		1F712F0720B0C6FC00052599 /* UIColor+Hex.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
 		571A1AB220AB5DC900624059 /* Crayons.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Crayons.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		571A1AB520AB5DC900624059 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		571A1AB620AB5DC900624059 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -159,6 +162,8 @@
 				571A1ABE20AB5DCA00624059 /* Assets.xcassets */,
 				571A1AC020AB5DCA00624059 /* LaunchScreen.storyboard */,
 				571A1AC420AB5DCA00624059 /* main.m */,
+				1F712F0620B0C6FC00052599 /* UIColor+Hex.h */,
+				1F712F0720B0C6FC00052599 /* UIColor+Hex.m */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -268,6 +273,7 @@
 				1F712EFD20AF488300052599 /* ContentView.m in Sources */,
 				1F712F0420AF593000052599 /* DetailCrayonViewController.m in Sources */,
 				1F712F0120AF590300052599 /* CrayonDetailView.m in Sources */,
+				1F712F0820B0C6FC00052599 /* UIColor+Hex.m in Sources */,
 				57D486A820ADE9560052E870 /* CrayonsViewController.m in Sources */,
 				571A1ADB20AB74DA00624059 /* Crayon.m in Sources */,
 			);
