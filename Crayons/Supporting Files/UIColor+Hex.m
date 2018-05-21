@@ -19,8 +19,8 @@
         [myscanner scanHexInt:&myInt];
 
         
-        
-        [self initWithRed:<#(CGFloat)#> green:<#(CGFloat)#> blue:<#(CGFloat)#> alpha:<#(CGFloat)#>]
+//        
+//        [self initWithRed:<#(CGFloat)#> green:<#(CGFloat)#> blue:<#(CGFloat)#> alpha:<#(CGFloat)#>]
     }
     return self;
 }
